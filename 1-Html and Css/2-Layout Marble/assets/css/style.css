@@ -1,0 +1,46 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Trebuchet MS;
+}
+body{
+	background-color: #f7f7f7;
+}
+.container{
+	max-width: 1280px;
+	margin: 0px auto;
+}
+.clearfix::after{
+	clear: both;
+	content:"";
+	display: table;
+}
+#header-container{
+	background-color: #e2e2e2;
+}
+#header-sub-container{
+	padding: 25px 0px;
+}
+#logo{
+	float: left;
+	width: 60%;
+}
+#navigation{
+	width: 40%;
+	float: right;
+	margin-top: 7px;
+}
+#navigation ul li{
+	float: left;
+	margin-right: 10px;
+	list-style-type: none;
+}
+#navigation ul li a{
+	text-decoration: none;
+	color: #4e4e4e;
+	font-weight: 600;
+}
+
+#navigation ul li a:hover{
+	color: #1abb9c;
+}
