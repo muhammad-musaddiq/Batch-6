@@ -97,3 +97,22 @@ body{
 #project-sub-container .project-items p{
     font-size: 14px;
 }
+
+#testimonial-container{
+	background-color: #efefef;
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+#testimonial-container img{
+	margin-bottom: 20px;
+}
+#testimonial-container p{
+	color: #a1a1a1;
+}
+
+#footer{
+	background-color: #1e1e1e;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
