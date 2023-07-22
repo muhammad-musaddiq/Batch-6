@@ -112,7 +112,20 @@ body{
 }
 
 #footer{
+	color: #cacaca;
 	background-color: #1e1e1e;
 	padding-top: 60px;
 	padding-bottom: 60px;
+}
+
+#footer h4{
+ color: #6c6c6c;
+ font-weight: 900;
+ font-size: 22px;	
+}
+
+.footer-items{
+	width: 23%;
+	float: left;
+	margin-right: 25px;
 }
