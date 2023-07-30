@@ -148,11 +148,38 @@ body{
 
 #footer-item-second p::before{
 	content: "";
-	height: 15px;
 	width: 15px;
-	background-image: url("./../images/tweet.png");
-	background-repeat: no-repeat;
+	height: 15px;
 	position: absolute;
 	left: 0px;
-	top: 6px;
+	top: 8px;
+	background-image: url("./../images/tweet.png");
+	background-repeat: no-repeat;
+}
+
+
+/*Tablet*/
+@media screen and (max-width: 1094px){
+	#header-sub-container{
+		text-align: center;
+	}
+	#logo {
+	    float: none;
+	    width: 100%;
+	    margin-bottom: 20px;
+	}
+	#navigation{
+		float: none;
+		width: 100%;
+	}
+	#navigation ul li {
+	    float: none;
+	    margin-right: 0px;
+	    margin-bottom: 20px;
+	}
+}
+
+/*Mobile*/
+@media screen and (max-width: 767px){
+	
 }
