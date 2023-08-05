@@ -1,0 +1,15 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+	max-width: 90%;
+	margin: 0px auto;
+}
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
