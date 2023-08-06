@@ -13,3 +13,40 @@
 	display: table;
 	clear: both;
 }
+#header{
+	width: 100%;
+	background-color: #151515;
+	padding: 12px 0px;
+}
+#logo{
+	width: 30%;
+	float: left;
+}
+#navigation{
+	width: 30%;
+	float: right;
+	color: #fff;
+	margin-top: 24px;
+}
+
+#navigation ul li{
+	float: left;
+	list-style-type: none;
+	font-size: 16px;
+	margin-right: 16px;
+}
+
+
+#navigation ul li:nth-child(even){
+	 color: #008000;
+	 font-weight: bold;
+}
+
+#navigation ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+
+#image-container{
+	background-image: url("../images/banner.jpg");
+}
