@@ -23,7 +23,7 @@
 	float: left;
 }
 #navigation{
-	width: 30%;
+	width: 31%;
 	float: right;
 	color: #fff;
 	margin-top: 24px;
@@ -49,4 +49,27 @@
 
 #image-container{
 	background-image: url("../images/banner.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	color: #fff;
+	padding-top: 85px;
+	box-sizing: border-box;
+}
+#image-container h1{
+	font-size: 70px;
+	font-weight: 100;
+	margin-bottom: 10px;
+}
+#image-container h3{
+	font-size: 24px;
+	font-weight: 100;
+	margin-bottom: 20px;
+}
+#image-container button{
+	background-color: green;
+	color: #fff;
+	padding: 13px 20px;
+	border: none;
+	border-radius: 5px;
 }
