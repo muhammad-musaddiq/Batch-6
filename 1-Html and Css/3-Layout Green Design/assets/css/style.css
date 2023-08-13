@@ -73,3 +73,21 @@
 	border: none;
 	border-radius: 5px;
 }
+#skills-container{
+	padding: 40px 0px;
+}
+#skills-container .skills-item{
+	float: left;
+	width: 30%;
+	text-align: center;
+	margin-right: 20px;
+}
+#skills-container .skills-item p{
+	color: #968888;
+		padding: 0px 70px;
+}
+#skills-container .skills-item h3{
+	color: #968888;
+	margin-bottom: 10px;
+	font-size: 25px;
+}
