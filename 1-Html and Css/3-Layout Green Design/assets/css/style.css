@@ -91,3 +91,78 @@
 	margin-bottom: 10px;
 	font-size: 25px;
 }
+.line-heading-section{
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+.line-heading-section h2{
+    background-color: #008000;
+    font-size: 18px;
+    width: 24%;
+    color: #fff;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: -24px;
+    padding: 12px 0px;
+}
+
+#testimonials{
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+
+#testimonials div:nth-child(1){
+  float: left;
+  width: 30%;
+}
+
+#testimonials div:nth-child(1) img{
+  width: 80%;
+}
+
+#testimonials div:nth-child(2){
+	float: right;
+	width: 68%;
+	padding-top: 20px;
+}
+
+#testimonials div:nth-child(2) img{
+	margin-bottom: 20px;
+}
+
+#testimonials div:nth-child(2) p{
+	font-style: italic;
+    text-align: center;
+}
+#location{
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+#location-first-item{
+	float: left;
+	width: 60%;
+}
+
+#location-first-item div{
+	margin-bottom: 15px;
+}
+#location-first-item div img{
+	float: left;
+}
+#location-first-item div p{
+	float: left;
+	margin-left: 15px;
+	color: #968888;
+	margin-top: 8px;
+}
+#icons{
+	margin-top: 73px;
+}
+
+#location-second-item{
+	float: right;
+	width: 40%;
+	text-align: right;
+}
