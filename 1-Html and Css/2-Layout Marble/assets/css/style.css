@@ -158,62 +158,27 @@ body{
 }
 
 
-/*Tablet*/
-@media screen and (max-width: 1266px){
-	.service-item{
-		float: none;
-		width: 100%;
-		margin-bottom: 40px;
-	}
-}
-
-
-@media screen and (max-width: 1094px){
-	#header-sub-container{
-		text-align: center;
-	}
-	#logo {
+@media screen and (max-width:1024px) {
+  #header-sub-container{
+  	text-align: center;
+  }
+  #logo{
+  	float: none;
+  	width: 100%;
+  	margin-bottom: 20px;
+  }
+  #navigation{
+  	float: none;
+  	width: 100%;
+  }
+  #navigation ul li {
+  	float: none;
+  	margin-right: 0px;
+  	margin-bottom: 20px;
+  }
+  .service-item {
 	    float: none;
 	    width: 100%;
 	    margin-bottom: 20px;
 	}
-	#navigation{
-		float: none;
-		width: 100%;
-	}
-	#navigation ul li {
-	    float: none;
-	    margin-right: 0px;
-	    margin-bottom: 20px;
-	}
-	#project-container h2{
-		text-align: center;
-	}
-	#project-container{
-		padding: 0px 10px;
-	}
-	#project-sub-container .project-items{
-		float: none;
-		width: 100%; 
-		text-align: center;
-		margin-bottom: 40px;
-	}
-	.footer-items{
-		width: 100%;
-		float: none;
-		text-align: center;
-		margin-bottom: 40px;
-	}
-	#footer-item-second p{
-		display: inline-block;
-	}
-	#footer{
-		text-align: center;
-	}
-	
-}
-
-/*Mobile*/
-@media screen and (max-width: 767px){
-	
 }
