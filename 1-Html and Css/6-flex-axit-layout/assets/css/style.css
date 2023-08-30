@@ -1,8 +1,29 @@
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Regular'), url('fonts/myriad-pro-cufonfonts-webfont/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+
 *{
 	margin: 0px;
 	padding: 0px;
+    font-family: 'Myriad Pro Regular';
 }
 
+:root{
+	--white: red;
+}
+
+
+h1{
+	color: var(--white);
+}
+
+h2{
+	color: var(--white);
+}
 .container{
 	width: 80%;
 	margin: 0px auto;
@@ -32,3 +53,5 @@ nav ul li{
 nav ul li:last-child{
 	margin-right: 0px;
 }
+
+/*:even :odd :nth-child(number) :first-child :last-child*/
