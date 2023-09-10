@@ -15,6 +15,11 @@
 :root{
 	--white: #fff;
 	--727171: #727171;
+	--bg-color: #f5f5f5;
+	--bg-color-2: #ff8b38;
+	--text-color-2: #333333;
+	--text-color-3: #ff8b38;
+	--border-color-1: #d6d6d6;
 }
 
 
@@ -98,4 +103,52 @@ nav ul li:last-child{
 	color: var(--white);
 	border: 1px solid var(--white);
 	padding: 10px 30px;
+}
+
+#trial-form-container{
+	background-color: var(--white);
+	width: 380px;
+	border-radius: 10px;
+}
+
+#trial-form-header{
+	background-color: var(--bg-color);
+	text-align: center;
+	padding: 15px 0px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+#trial-form-header h2{
+	color: var(--text-color-2);
+}
+#trial-form-header h2 span{
+	color: var(--text-color-3);
+}
+
+#trial-form-body{
+	margin: 30px 0px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+#trial-form-body input{
+	width: 100%;
+	padding: 5px 10px;
+	border: none;
+	border-bottom: 1px solid var(--border-color-1);
+	color: var(--border-color-1);
+	box-sizing: border-box;
+	margin-bottom: 30px;
+	font-size: 16px;
+	outline: none;
+}
+
+#trial-form-footer button{
+	border: none;
+	background-color: var(--bg-color-2);
+	width: 100%;
+	color: var(--white);
+	padding: 15px 10px;
+	font-size: 16px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
