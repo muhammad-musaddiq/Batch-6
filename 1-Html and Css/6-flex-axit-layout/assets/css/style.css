@@ -21,15 +21,6 @@
 	--text-color-3: #ff8b38;
 	--border-color-1: #d6d6d6;
 }
-
-
-h1{
-	color: var(--white);
-}
-
-h2{
-	color: var(--white);
-}
 .container{
 	width: 80%;
 	margin: 0px auto;
@@ -151,4 +142,25 @@ nav ul li:last-child{
 	font-size: 16px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
+}
+
+#social-info{
+	border-bottom: 2px solid var(--border-color-1);
+}
+
+#social-sub-info{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0px;
+	align-items: center;
+}
+#social-sub-info h2{
+	color:#333333;
+}
+#social-sub-info p{
+	color: #ababab;
+}
+
+#social-sub-info-img{
+	max-width: 350px;
 }
