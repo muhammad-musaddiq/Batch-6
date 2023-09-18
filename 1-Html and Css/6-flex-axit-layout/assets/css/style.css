@@ -19,7 +19,9 @@
 	--bg-color-2: #ff8b38;
 	--text-color-2: #333333;
 	--text-color-3: #ff8b38;
+	--btn-color-1: #ff8b38;
 	--border-color-1: #d6d6d6;
+	--paragraph-text-color: #86878b;
 }
 .container{
 	width: 80%;
@@ -163,4 +165,104 @@ nav ul li:last-child{
 
 #social-sub-info-img{
 	max-width: 350px;
+}
+
+#tab-main-container{
+	padding:100px 0px;
+	background-color: var(--bg-color);
+}
+#tab-sub-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#three-tabs-main-container{
+	flex-basis: 50%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#tab-second-section h4{
+	font-size: 20px;
+}
+
+#tab-second-section p{
+	color: var(--paragraph-text-color);
+	margin: 45px 0px;
+	    line-height: 26px;
+}
+.common-button-in-layout{
+	border: none;
+	background-color: var(--btn-color-1);
+	color: var(--white);
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+#three-tabs-sub-container{
+	flex-basis: 130px;
+}
+
+#three-tabs-sub-container div:nth-child(1){
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+#three-tabs-sub-container div:nth-child(3){
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.tabs-item{
+	padding: 55px 20px;
+	background-color: var(--text-color-2);
+	border-bottom: 1px solid var(--white);
+	color: var(--white);
+	text-align: center;
+}
+
+
+#tabs-item-active{
+	background-color: var(--bg-color-2);
+}
+
+#tab-second-section{
+	flex-basis: 60%;
+}
+
+#sub-list-section-container{
+	padding: 50px 0px;
+}
+#sub-list-section-container-2{
+	display: flex;
+	justify-content: space-between;
+}
+#sub-list-section-container-2-second-children{
+	flex-basis: 45%;
+}
+.common-heading{
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.common-heading-seperator{
+	width: 18%;
+	height: 3px;
+	background-color: var(--bg-color-2);
+	margin-bottom: 20px;
+	border: none;
+}
+.common-paragraph{
+	color: var(--paragraph-text-color);
+	font-size: 16px;
+}
+.information-container{
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0px;
+	gap: 20px;
+}
+.information-container i{
+	color: var(--bg-color-2);
+	font-size: 18px;
+	border: 2px solid;
+	padding: 16px;
+	border-radius: 100%;
 }
