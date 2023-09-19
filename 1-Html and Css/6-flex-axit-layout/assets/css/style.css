@@ -266,3 +266,52 @@ nav ul li:last-child{
 	padding: 16px;
 	border-radius: 100%;
 }
+
+#standard-picture-section{
+	background-color: var(--bg-color);
+	padding: 100px 0px;
+}
+#standard-picture-sub-section{
+	display: flex;
+	justify-content: space-between;
+}
+
+#standard-picture-sub-section div:nth-child(1){
+	flex-basis: 40%;
+}
+
+#awesome-section{
+	padding: 100px 0px;
+}
+
+#awesome-container{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.common-heading-2{
+	font-size: 42px;
+	margin-bottom: 15px;
+}
+.common-heading-seperator-2{
+	width: 10%;
+	height: 2px;
+	background-color: var(--bg-color-2);
+	margin-bottom: 20px;
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#skills-container{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+#skills-container .skills-items{
+	flex-basis: 30%;
+}
+
+#skills-container .skills-items h2{
+	margin-top: 20px;
+}
