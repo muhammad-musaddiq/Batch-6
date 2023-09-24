@@ -385,3 +385,64 @@ nav ul li:last-child{
 	padding: 10px 0px;
 	color: var(--white);
 }
+
+#testimonials-container{
+	padding: 100px 0px;
+}
+
+#main-testimonials-container{
+	display: flex;
+	justify-content: space-between;
+}
+.main-testimonials-container-items{
+	flex-basis: 28%;
+}
+
+.testimonials-body{
+	background-color: var(--bg-color);
+	border-radius: 5px;
+	padding: 15px;
+	position: relative;
+	margin-bottom: 35px;
+}
+
+.testimonials-user-profile{
+	display: flex;
+	align-items: center;
+	gap:15px;
+	margin-top: 20px;
+}
+.arrow-testimonials{
+	position: absolute;
+	bottom: -15px;
+	left: 22px;
+}
+
+#axure-design-main{
+	background-image: url(../images/u25_state0.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 100px 0px;
+	text-align: center;
+	color: var(--white);
+}
+
+#axure-design-main h2{
+	 font-weight: 100;
+}
+#axure-design-main p{
+	 color: var(--white);
+	 margin-bottom: 30px;
+}
+#axure-design-main hr{
+    width: 5%;
+	background-color: var(--white);
+}
+
+.common-button{
+	background-color: transparent;
+	color: var(--white);
+	border: 1px solid var(--white);
+	padding: 10px 30px;
+}
