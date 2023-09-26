@@ -446,3 +446,44 @@ nav ul li:last-child{
 	border: 1px solid var(--white);
 	padding: 10px 30px;
 }
+
+#contact-form-container{
+	padding: 100px 0px;
+	text-align: center;
+}
+
+#contact-sub-form-container{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.input-control{
+	border: none;
+	border-bottom: 1px solid var(--border-color-1);
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 15px 10px;
+	color: var(--border-color-1);
+	outline: none;
+}
+.contact-sub-form-container-items{
+	flex-basis: 48%;
+}
+.text-area-input-control{
+	border: none;
+	border-bottom: 1px solid var(--border-color-1);
+	width: 100%;
+	color: var(--border-color-1);
+	outline: none;
+	height: 179px;
+}
+
+footer{
+	background-color:#000;
+	width: 100%;
+	padding: 20px 0px;
+	text-align: center;
+}
+footer img{
+	margin-bottom: 20px;
+}
