@@ -1,0 +1,3 @@
+Install Two Packages is VS Code
+1- Live Server
+2- Javascript (ES6) code snippets
