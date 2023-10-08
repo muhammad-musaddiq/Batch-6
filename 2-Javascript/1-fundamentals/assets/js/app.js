@@ -36,16 +36,40 @@ var musaddiqMarks = muzammilMarks;
 
 musaddiqMarks = 95;
 
-// console.log(muzammilMarks, "muzammilMarks");
-// console.log(musaddiqMarks, "musaddiqMarks");
+console.log(muzammilMarks, "muzammilMarks");
+console.log(musaddiqMarks, "musaddiqMarks");
 
 // Reference type example
 
 var arrayOne = ["one", "two"];
-var arraytwo = arrayOne; // it will create a refrance of array One
-var arrayThree = arraytwo; // it will create a refrance of array One
+// var arraytwo = arrayOne; // it will create a refrance of array One
+var arraytwo = [...arrayOne]; // we can remove refrence from spread operator [...]
 
 arraytwo.push("three");
 
-console.log(arrayOne, "arrayOne");
-console.log(arraytwo, "arraytwo");
+// console.log(arrayOne, "arrayOne");
+// console.log(arraytwo, "arraytwo");
+
+//we have three types of variables
+//1- let
+//2- const
+//3- var
+
+// function test() {
+
+// }
+
+// {} = scope
+
+{
+  let musaddiq_var = "working";
+  // console.log(musaddiq_var, "musaddiq_var");
+}
+
+// console.log(musaddiq_var, "musaddiq_var");
+
+const name = "Musaddiq";
+
+name = "hammad";
+
+console.log(name, "name");
