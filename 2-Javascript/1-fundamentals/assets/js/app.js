@@ -36,14 +36,14 @@ var musaddiqMarks = muzammilMarks;
 
 musaddiqMarks = 95;
 
-console.log(muzammilMarks, "muzammilMarks");
-console.log(musaddiqMarks, "musaddiqMarks");
+// console.log(muzammilMarks, "muzammilMarks");
+// console.log(musaddiqMarks, "musaddiqMarks");
 
 // Reference type example
 
 var arrayOne = ["one", "two"];
 // var arraytwo = arrayOne; // it will create a refrance of array One
-var arraytwo = [...arrayOne]; // we can remove refrence from spread operator [...]
+var arraytwo = [arrayOne]; // we can remove refrence from spread operator [...]
 
 arraytwo.push("three");
 
@@ -70,6 +70,41 @@ arraytwo.push("three");
 
 const name = "Musaddiq";
 
-name = "hammad";
+// name = "hammad";
 
-console.log(name, "name");
+// console.log(name, "name");
+
+function workingFunction() {
+  var amountTest = 100;
+  // console.log(amountTest, "amountTest");
+}
+
+// console.log(amountTest, "amountTest");
+workingFunction();
+
+// javascript is case sensitive
+var some = "some 1";
+var Some = "some 2 with capital S";
+
+console.log(some, "some");
+console.log(Some, "Some");
+
+//naming of variables
+
+// letters, a to z or 123 =  let test123
+// underscore, = let javascript_awesome_one
+// camelcase, = let javacsriptAwesomeOne
+// pascal case, = let JavacsriptAwesomeOne
+
+//Type Conversion
+
+let testingVariable = "this is text or string";
+testingVariable = 1231232;
+testingVariable = new String(12344);
+testingVariable = new String(true);
+testingVariable = new String(false);
+testingVariable = new String(new Date());
+
+let date = new Date();
+console.log(date, "date");
+console.log(testingVariable, "testingVariable");
