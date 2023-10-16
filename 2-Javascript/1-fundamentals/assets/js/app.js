@@ -86,8 +86,8 @@ workingFunction();
 var some = "some 1";
 var Some = "some 2 with capital S";
 
-console.log(some, "some");
-console.log(Some, "Some");
+// console.log(some, "some");
+// console.log(Some, "Some");
 
 //naming of variables
 
@@ -106,5 +106,37 @@ testingVariable = new String(false);
 testingVariable = new String(new Date());
 
 let date = new Date();
-console.log(date, "date");
-console.log(testingVariable, "testingVariable");
+// console.log(date, "date");
+// console.log(testingVariable, "testingVariable");
+
+//Convert to number
+testingVariable = new Number("2");
+testingVariable = new Number(true);
+testingVariable = new Number(false);
+testingVariable = new Number(null);
+testingVariable = new Number("Hello");
+testingVariable = new Number([1, 2, 3, 4, 5]);
+testingVariable = new Number({ a: 1, b: 2 });
+
+testingVariable = parseInt("2");
+testingVariable = parseFloat("2.5");
+
+testingVariable = new Boolean("ABC");
+testingVariable = new Boolean("");
+testingVariable = new Boolean(1);
+testingVariable = new Boolean(0);
+
+// console.log(testingVariable, "testingVariable 2323");
+
+// console methods
+
+const arrgVariable = {
+  name: "Musaddiq",
+  designation: "Software Engineer",
+  companyName: "Sipli Fleet",
+};
+
+console.error(arrgVariable, "arrgVariable");
+console.info(arrgVariable, "arrgVariable");
+console.warn(arrgVariable, "arrgVariable");
+console.table(arrgVariable, "arrgVariable");
