@@ -121,10 +121,10 @@ testingVariable = new Number({ a: 1, b: 2 });
 testingVariable = parseInt("2");
 testingVariable = parseFloat("2.5");
 
-testingVariable = new Boolean("ABC");
-testingVariable = new Boolean("");
-testingVariable = new Boolean(1);
-testingVariable = new Boolean(0);
+testingVariable = new Boolean("ABC"); // true
+testingVariable = new Boolean(""); // false
+testingVariable = new Boolean(1); // true
+testingVariable = new Boolean(0); // false
 
 // console.log(testingVariable, "testingVariable 2323");
 
@@ -136,7 +136,70 @@ const arrgVariable = {
   companyName: "Sipli Fleet",
 };
 
-console.error(arrgVariable, "arrgVariable");
-console.info(arrgVariable, "arrgVariable");
-console.warn(arrgVariable, "arrgVariable");
-console.table(arrgVariable, "arrgVariable");
+// console.error(arrgVariable, "arrgVariable");
+// console.info(arrgVariable, "arrgVariable");
+// console.warn(arrgVariable, "arrgVariable");
+// console.table(arrgVariable, "arrgVariable");
+
+// Arthmetic Operators
+
+testingVariable = 5 + 5;
+testingVariable = 5 - 5;
+testingVariable = 5 / 5;
+testingVariable = 5 % 5;
+testingVariable = 5 * 5;
+
+// Math Object / Calculation Methods
+
+testingVariable = Math.round(2.4);
+testingVariable = Math.round(2.6);
+testingVariable = Math.min(33, 100, 15555, 888, 999, 55555);
+testingVariable = Math.max(33, 100, 15555, 888, 999, 55555);
+testingVariable = Math.random() * 20 + 1;
+
+// console.log(testingVariable, "testingVariable");
+
+/*==================================
+=            math floor            =
+==================================*/
+//for positive numbers
+val = Math.floor(2.4); //2
+val = Math.floor(2.3); //2
+val = Math.floor(2.59); //2
+val = Math.floor("2.3"); //2
+val = Math.floor(2); //2
+
+//for negative number
+val = Math.floor(-2.4); //-3
+val = Math.floor(-2.3); //-3
+val = Math.floor(-2.5); //-3
+
+/*=====  End of math floor  ======*/
+
+//String Concatination
+//string ko jorna
+
+const firstName = "Musaddiq";
+const lastName = "Mustaqeem";
+
+const fullName = firstName + " " + lastName;
+
+let testString =
+  "Hello, World my name is 'Musaddiq Mustaqeem and my age' is 24";
+
+testString = "Hello, World my name is '" + fullName + " and my age' is 24";
+
+testString = "Hello, World my name is '\n Musaddiq Mustaqeem and my age' is 24";
+
+console.log(testString, "testString");
+
+// Test
+
+// const data = ["1", "2"];
+
+// let newArrg = data;
+
+// let testing = (newArrg = "testing");
+
+// console.log(newArrg, "newArrg");
+// console.log(testing, "testing");
