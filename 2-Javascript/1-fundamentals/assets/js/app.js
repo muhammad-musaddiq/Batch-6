@@ -182,7 +182,7 @@ val = Math.floor(-2.5); //-3
 const firstName = "Muhammad Musaddiq";
 const lastName = "Mustaqeem";
 
-const fullName = firstName + " " + lastName;
+const fullName = firstName + " " + lastName; // Muhammad Musaddiq Mustaqeem
 
 testString = "Hello, World my name is '" + fullName + " and my age' is 24";
 
@@ -196,4 +196,46 @@ testString = testString.concat(" new thing ", " second thing");
 // testString = testString.includes("Hello, World");
 testString = testString.replace(fullName, "Shariq Musatqeem");
 
-console.log(testString, "testString");
+// function testing(parm1, parm2) {}
+
+// testing("parm1", "parm2");
+
+// console.log(testString, "testString");
+
+// soda lana hai ammi ka
+
+let saman = "dahi";
+// let saman2 = "dahi";
+let purchased = "";
+
+if (saman == "tomato") {
+  purchased = "tomato";
+} else {
+  purchased = "dahi";
+}
+
+let foodpanda = "dfvzesrdgv";
+let drink = "";
+
+if (foodpanda == "briyani") {
+  drink = "Jumbo Cold Drink";
+} else if (foodpanda == "karahi") {
+  drink = "lassi";
+} else if (foodpanda == "zinger") {
+  drink = "limca";
+} else {
+  drink = "water";
+}
+
+// console.log(drink, "drink");
+
+//Array Methods
+
+const fruits = ["Mango", "Banana", "Apple"];
+fruits.push("Grapes");
+
+console.log(fruits, "fruits");
+console.log(fruits[0], "fruits");
+console.log(fruits[1], "fruits");
+console.log(fruits[2], "fruits");
+console.log(fruits.length, "fruits");
