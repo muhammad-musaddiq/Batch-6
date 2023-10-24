@@ -179,27 +179,21 @@ val = Math.floor(-2.5); //-3
 //String Concatination
 //string ko jorna
 
-const firstName = "Musaddiq";
+const firstName = "Muhammad Musaddiq";
 const lastName = "Mustaqeem";
 
 const fullName = firstName + " " + lastName;
-
-let testString =
-  "Hello, World my name is 'Musaddiq Mustaqeem and my age' is 24";
 
 testString = "Hello, World my name is '" + fullName + " and my age' is 24";
 
 testString = "Hello, World my name is '\n Musaddiq Mustaqeem and my age' is 24";
 
+testString = `Hello, World my name is '\n ${fullName} and my age' is 24`;
+
+testString = testString.concat(" new thing ", " second thing");
+// testString = testString.toLowerCase();
+// testString = testString.toUpperCase();
+// testString = testString.includes("Hello, World");
+testString = testString.replace(fullName, "Shariq Musatqeem");
+
 console.log(testString, "testString");
-
-// Test
-
-// const data = ["1", "2"];
-
-// let newArrg = data;
-
-// let testing = (newArrg = "testing");
-
-// console.log(newArrg, "newArrg");
-// console.log(testing, "testing");
