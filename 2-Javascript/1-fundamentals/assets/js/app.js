@@ -196,9 +196,9 @@ testString = testString.concat(" new thing ", " second thing");
 // testString = testString.includes("Hello, World");
 testString = testString.replace(fullName, "Shariq Musatqeem");
 
-// function testing(parm1, parm2) {}
+function testing(parm1, parm2) {}
 
-// testing("parm1", "parm2");
+testing("parm1", "parm2");
 
 // console.log(testString, "testString");
 
@@ -214,7 +214,7 @@ if (saman == "tomato") {
   purchased = "dahi";
 }
 
-let foodpanda = "dfvzesrdgv";
+let foodpanda = "briyani";
 let drink = "";
 
 if (foodpanda == "briyani") {
@@ -234,8 +234,51 @@ if (foodpanda == "briyani") {
 const fruits = ["Mango", "Banana", "Apple"];
 fruits.push("Grapes");
 
-console.log(fruits, "fruits");
-console.log(fruits[0], "fruits");
-console.log(fruits[1], "fruits");
-console.log(fruits[2], "fruits");
-console.log(fruits.length, "fruits");
+let numbers = [22, 60, 10, 88, 99];
+// numbers.push(2000);
+// numbers.unshift(9999);
+// numbers.pop();
+// numbers.shift();
+// numbers.splice(0, 3);
+
+numbers.sort(function (x, y) {
+  return x - y;
+});
+
+numbers.sort(function (x, y) {
+  return y - x;
+});
+
+// console.log(numbers, "numbers");
+// console.log(fruits[0], "fruits");
+// console.log(fruits[1], "fruits");
+// console.log(fruits[2], "fruits");
+// console.log(fruits.length, "fruits");
+
+const users = [
+  {
+    name: "musaddiq",
+    email: "musaddiqmustaqeem@gmail.com",
+    status: "Active",
+  },
+  {
+    name: "muzammil",
+    email: "muzammil@gmail.com",
+    status: "Active",
+  },
+  {
+    name: "shariq",
+    email: "shariq@gmail.com",
+    status: "Deactive",
+  },
+];
+
+const findMusaddiqUser = users.find(function (singleUser) {
+  return singleUser.email === "shariq@gmail.com";
+});
+
+const findStatusUser = users.filter(function (singleUser) {
+  return singleUser.status === "Deactive";
+});
+
+console.log(findStatusUser, "findStatusUser");
