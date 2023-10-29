@@ -235,19 +235,23 @@ const fruits = ["Mango", "Banana", "Apple"];
 fruits.push("Grapes");
 
 let numbers = [22, 60, 10, 88, 99];
-// numbers.push(2000);
-// numbers.unshift(9999);
-// numbers.pop();
-// numbers.shift();
-// numbers.splice(0, 3);
 
-numbers.sort(function (x, y) {
-  return x - y;
-});
+// numbers.push(2000); //Add on the end of array
+// numbers.unshift(9999); //Add on the start of array
+// numbers.pop(); //remove array from end
+// numbers.shift(); //remove array from start
+// numbers.splice(1, 1); //remove from array
+// numbers.splice(1, 3); //remove from array
 
-numbers.sort(function (x, y) {
-  return y - x;
-});
+//ascending Order with sort method
+// numbers.sort(function (x, y) {
+//   return x - y;
+// });
+
+//descending Order with sort method
+// numbers.sort(function (x, y) {
+//   return y - x;
+// });
 
 // console.log(numbers, "numbers");
 // console.log(fruits[0], "fruits");
@@ -269,16 +273,87 @@ const users = [
   {
     name: "shariq",
     email: "shariq@gmail.com",
-    status: "Deactive",
+    status: "Active",
   },
 ];
 
 const findMusaddiqUser = users.find(function (singleUser) {
-  return singleUser.email === "shariq@gmail.com";
-});
-
-const findStatusUser = users.filter(function (singleUser) {
   return singleUser.status === "Deactive";
 });
 
-console.log(findStatusUser, "findStatusUser");
+const findStatusUser = users.filter(function (singleUser) {
+  return singleUser.status === "Active";
+});
+
+const needModifyUserData = users.map(function (singleUser) {
+  return {
+    userEmail: singleUser.email,
+    userName: singleUser.name,
+    userStatus: singleUser.status,
+  };
+});
+
+//kuch condition true hongi to true warna false
+//some method will return boolean (true/false) value
+const findDeactiveUser = users.some(function (singleUser) {
+  return singleUser.status === "Deactive";
+});
+
+const findActiveUser = users.every(function (singleUser) {
+  return singleUser.status === "Active";
+});
+
+// console.log(findActiveUser, "findActiveUser");
+
+// COMPARISON
+
+// Comparison operators are used in logical statements to
+// determine equality or difference between variables or values.
+const conditionVariableChecking = 8;
+
+// == EQUAL TO
+
+// if (conditionVariableChecking == 8) {
+//   console.log("condition is true");
+// } else {
+//   console.log("condition is false");
+// }
+
+// === EQUAL TO with type check
+
+// if (conditionVariableChecking === 8) {
+//   console.log("condition is true");
+// } else {
+//   console.log("condition is false");
+// }
+
+// != not equal to
+
+// let conditionNumber = 2;
+// if (conditionVariableChecking !== 2) {
+//   console.log("condition is true");
+// } else {
+//   console.log("condition is false");
+// }
+
+let id = 40;
+
+// if (id < 40) {
+//   console.log("Correct");
+// } else {
+//   console.log("In Correct");
+// }
+
+// if (id > 40) {
+//   console.log("Correct");
+// } else {
+//   console.log("In Correct");
+// }
+
+if (id >= 50) {
+  console.log("Correct");
+} else {
+  console.log("In Correct");
+}
+
+// console.log(typeof conditionVariableChecking);
