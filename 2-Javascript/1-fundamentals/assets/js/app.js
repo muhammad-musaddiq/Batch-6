@@ -303,13 +303,50 @@ const findActiveUser = users.every(function (singleUser) {
   return singleUser.status === "Active";
 });
 
+// it will run condition
+let i = 0;
+while (i < 10) {
+  console.log(i, "i");
+  i++;
+}
+
+do {
+  console.log(i, "i");
+  i++;
+} while (i < 0);
+
+//object loop
+const person = { fname: "Muhammad", lname: "Musaddiq", age: 22 };
+
+for (let x in person) {
+  //x  = object key like fname
+  console.log(x, "object key");
+  console.log(person[x], "object key");
+}
+
+// ['fname','lname','age']
+
+const arrayOfKeys = Object.keys(person);
+
+// console.log(arrayOfKeys, "arrayOfKeys");
+
+// Object.keys(person).forEach(function (singleObjectKey) {
+//   console.log(singleObjectKey, "singleObjectKey");
+// });
+
+arrayOfKeys.forEach(function (singleObjectKey) {
+  console.log(singleObjectKey, "singleObjectKey");
+
+  console.log(person[singleObjectKey], "object value");
+});
+
 // console.log(findActiveUser, "findActiveUser");
 
 // COMPARISON
 
 // Comparison operators are used in logical statements to
 // determine equality or difference between variables or values.
-const conditionVariableChecking = 8;
+const conditionVariableChecking = "8";
 
 // == EQUAL TO
 
@@ -336,7 +373,7 @@ const conditionVariableChecking = 8;
 //   console.log("condition is false");
 // }
 
-let id = 40;
+// let id = 40;
 
 // if (id < 40) {
 //   console.log("Correct");
@@ -350,10 +387,10 @@ let id = 40;
 //   console.log("In Correct");
 // }
 
-if (id >= 50) {
-  console.log("Correct");
-} else {
-  console.log("In Correct");
-}
+// if (id >= 30) {
+//   console.log("Correct");
+// } else {
+//   console.log("In Correct");
+// }
 
 // console.log(typeof conditionVariableChecking);
