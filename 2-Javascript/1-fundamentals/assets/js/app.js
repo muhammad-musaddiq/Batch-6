@@ -306,12 +306,12 @@ const findActiveUser = users.every(function (singleUser) {
 // it will run condition
 let i = 0;
 while (i < 10) {
-  console.log(i, "i");
+  // console.log(i, "i");
   i++;
 }
 
 do {
-  console.log(i, "i");
+  // console.log(i, "i");
   i++;
 } while (i < 0);
 
@@ -320,8 +320,8 @@ const person = { fname: "Muhammad", lname: "Musaddiq", age: 22 };
 
 for (let x in person) {
   //x  = object key like fname
-  console.log(x, "object key");
-  console.log(person[x], "object key");
+  // console.log(x, "object key");
+  // console.log(person[x], "object key");
 }
 
 // ['fname','lname','age']
@@ -335,9 +335,8 @@ const arrayOfKeys = Object.keys(person);
 // });
 
 arrayOfKeys.forEach(function (singleObjectKey) {
-  console.log(singleObjectKey, "singleObjectKey");
-
-  console.log(person[singleObjectKey], "object value");
+  // console.log(singleObjectKey, "singleObjectKey");
+  // console.log(person[singleObjectKey], "object value");
 });
 
 // console.log(findActiveUser, "findActiveUser");
@@ -394,3 +393,50 @@ const conditionVariableChecking = "8";
 // }
 
 // console.log(typeof conditionVariableChecking);
+
+let id;
+
+if (id == 101) {
+  // console.log("101");
+} else if (id == 102) {
+  // console.log("101");
+} else if (id == 103) {
+  // console.log("101");
+} else {
+  // console.log("not match any conditions");
+}
+
+//swictch case statement
+const color2 = "blue";
+
+switch (color2) {
+  case "red":
+    // console.log("color is red");
+    break;
+  case "blue":
+    // console.log("color is blue");
+    break;
+  default:
+  // console.log("color is not blue or red");
+}
+
+if (color2 == "red") {
+  // console.log("color is red");
+} else if (color2 == "blue") {
+  // console.log("color is blue");
+} else {
+  // console.log("color is not blue or red");
+}
+
+let valDate;
+const today = new Date();
+
+valDate = today.getMonth() + 1;
+valDate = today.getFullYear();
+valDate = today.getDay();
+valDate = today.getMinutes();
+valDate = today.getSeconds();
+valDate = today.getMilliseconds();
+valDate = today.getTime();
+
+console.log(valDate, "valDate");
