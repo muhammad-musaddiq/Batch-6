@@ -406,7 +406,7 @@ if (id == 101) {
   // console.log("not match any conditions");
 }
 
-//swictch case statement
+//switch case statement
 const color2 = "blue";
 
 switch (color2) {
@@ -439,4 +439,54 @@ valDate = today.getSeconds();
 valDate = today.getMilliseconds();
 valDate = today.getTime();
 
-console.log(valDate, "valDate");
+// console.log(valDate, "valDate");
+
+// Functions
+//A function is simply a “chunk” of code that you can use
+// over and over again, rather than writing it out multiple times.
+// Functions enable programmers to break down or decompose a problem
+//into smaller chunks, each of which performs a particular task.
+
+function anyname() {
+  console.log("anyname function is working");
+}
+
+// Declare Function
+// anyname();
+
+// Function parameters or arguement
+
+function fullNameTest(fName, lName) {
+  console.log(`${fName} ${lName}`);
+}
+
+// fullNameTest("Muhammad", "Musaddiq");
+// fullNameTest("Hammad", "Hashmi");
+// fullNameTest("Shahzaib", "S");
+// fullNameTest("Hammad", "Hashmi");
+
+// you can set default parameter in function
+function fullNameDefault(fName = "Muhammad", lName = "Musaddiq") {
+  console.log(`${fName} ${lName}`);
+}
+
+// fullNameDefault(); // without parameter so it will return this ""
+// fullNameDefault("Hammad", "Hashmi"); // Hammad Hashmi
+
+// IMMIDIATLEY INVOKABLE FUNCTION EXPRESSIONS - IIFEs
+
+const add2 = (function (firstParam = "", lastParam = "") {
+  console.log(`${firstParam} ${lastParam}`);
+})("1st", "2nd");
+
+const todo = {
+  add: function () {
+    // console.log("add todo..");
+  },
+  edit: function (id) {
+    // console.log(`Edit todo ${id}`);
+  },
+  working: true,
+};
+todo.add();
+todo.edit(2);
