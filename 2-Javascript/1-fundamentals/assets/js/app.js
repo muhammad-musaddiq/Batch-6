@@ -448,7 +448,7 @@ valDate = today.getTime();
 //into smaller chunks, each of which performs a particular task.
 
 function anyname() {
-  console.log("anyname function is working");
+  // console.log("anyname function is working");
 }
 
 // Declare Function
@@ -457,7 +457,7 @@ function anyname() {
 // Function parameters or arguement
 
 function fullNameTest(fName, lName) {
-  console.log(`${fName} ${lName}`);
+  // console.log(`${fName} ${lName}`);
 }
 
 // fullNameTest("Muhammad", "Musaddiq");
@@ -467,7 +467,7 @@ function fullNameTest(fName, lName) {
 
 // you can set default parameter in function
 function fullNameDefault(fName = "Muhammad", lName = "Musaddiq") {
-  console.log(`${fName} ${lName}`);
+  // console.log(`${fName} ${lName}`);
 }
 
 // fullNameDefault(); // without parameter so it will return this ""
@@ -475,9 +475,9 @@ function fullNameDefault(fName = "Muhammad", lName = "Musaddiq") {
 
 // IMMIDIATLEY INVOKABLE FUNCTION EXPRESSIONS - IIFEs
 
-const add2 = (function (firstParam = "", lastParam = "") {
-  console.log(`${firstParam} ${lastParam}`);
-})("1st", "2nd");
+// const add2 = (function (firstParam = "", lastParam = "") {
+//   console.log(`${firstParam} ${lastParam}`);
+// })("1st", "2nd");
 
 const todo = {
   add: function () {
@@ -488,5 +488,59 @@ const todo = {
   },
   working: true,
 };
-todo.add();
-todo.edit(2);
+// todo.add();
+// todo.edit(2);
+
+//closures
+
+//global variables
+let a = 4;
+function myFunction() {
+  return a * a;
+}
+
+//local variables
+function myFunction2() {
+  let b = 4;
+  return b * b;
+}
+
+// counter function
+
+// let counter = 0;
+
+// function add() {
+//   counter += 1;
+//   return counter;
+// }
+
+// add() 1
+// add() 2
+// add() 2
+// counter = 10000
+// add() 10001
+
+//we will create local variable
+// function add() {
+//   let counter = 0;
+//   counter += 1;
+//   return counter;
+// }
+
+// add() 1
+// add() 1
+
+//then we need closures
+const add = (function () {
+  let counter = 0;
+
+  return function () {
+    counter += 1;
+    return counter;
+  };
+})();
+
+//it's mean function k andar ak or function hoga
+// add() 1
+// add() 2
+// add() 3
