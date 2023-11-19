@@ -516,7 +516,7 @@ function myFunction2() {
 
 // add() 1
 // add() 2
-// add() 2
+// add() 3
 // counter = 10000
 // add() 10001
 
@@ -544,3 +544,68 @@ const add = (function () {
 // add() 1
 // add() 2
 // add() 3
+
+// look at window object
+
+//WINDOW METHODS / OBJECTS / PROPERTIES
+
+// window object is global
+
+// window.alert("working");
+// alert("working");
+
+// console.log(window, "window");
+
+//Propmt
+
+// const input = propmt();
+
+// console.log(input, "input");
+
+// Confirm
+
+// const confirmedChecked = confirm("Are You Sure");
+
+// if (confirmedChecked) {
+//   console.log("you have selected ok");
+// } else {
+//   console.log("you have selected cancel");
+// }
+
+let val22;
+
+val22 = window.outerHeight; // browser height
+val22 = window.outerWidth; // browser width
+
+val22 = window.innerHeight; // browser inner height
+val22 = window.innerWidth; // browser inner height
+
+val22 = window.scrollY; // calculate y axis scroll
+val22 = window.scrollX; // calculate x axis scroll
+
+val22 = window.location;
+
+val22 = window.location.host;
+val22 = window.location.hostname;
+val22 = window.location.port;
+val22 = window.location.href;
+
+// console.log(val22, "val22");
+
+// navigator = browser
+
+if (window.navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(function (position) {
+    console.log(position, "position");
+  });
+} else {
+  console.log("Geolocation is not supported by this browser.");
+}
+
+// redirect
+
+// window.location.href = "https://google.com";
+
+setTimeout(function () {
+  console.log("execute this function after three seconds");
+}, 3000);
