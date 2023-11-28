@@ -43,7 +43,7 @@ const taskBtnElement = document.querySelector("#task-button");
 // taskBtnElement.addEventListener("click", function (event) {
 //   event.preventDefault();
 
-//   if (cardTitleElement.style.display === "none") {
+//   if (cardTitleElement.style.display == "none") {
 //     cardTitleElement.style.display = "block";
 //   } else {
 //     cardTitleElement.style.display = "none";
@@ -57,7 +57,7 @@ const collectionItem = document.getElementsByClassName("collection-item");
 //Text Change
 // taskTitle.textContent = "Shahzaib";
 // taskTitle.innerText = "Shahzaib";
-// taskTitle.innerHTML = "<span style='color:red'>Shahzaib</span>";
+// cardTitleElement.innerHTML = "<span style='color:red'>Shahzaib</span>";
 
 // console.log(taskTitle);
 //it will return array
@@ -75,12 +75,13 @@ const deleteItemBtnElements = document.querySelectorAll(".delete-item");
 deleteItemBtnElements.forEach(function (singleButton) {
   singleButton.addEventListener("click", function (event) {
     event.preventDefault(); // default functionality rukne ke liye
+
     const currentElement = event.target;
     currentElement.parentElement.parentElement.remove();
     // console.log(currentElement, "currentElement");
   });
 });
-// console.log(deleteItemBtnElements, "deleteItemBtnElements");
+console.log(deleteItemBtnElements, "deleteItemBtnElements");
 
 // we have nodes in traversing
 
@@ -97,4 +98,72 @@ deleteItemBtnElements.forEach(function (singleButton) {
 
 const nodeCollection = document.querySelector(".collection").childNodes;
 
-console.log(nodeCollection, "nodeCollection");
+// console.log(nodeCollection, "nodeCollection");
+
+const collection = document.querySelector(".collection");
+
+//for selecting element
+
+// First Child
+
+// console.log(collection.firstChild);
+// console.log(collection.firstElementChild);
+
+//Last Child
+
+// console.log(collection.lastChild);
+// console.log(collection.lastElementChild);
+
+const firstCollectionItem = document.querySelector(".collection-item");
+
+// Next sibling elemnt
+
+// console.log(firstCollectionItem.nextSibling, "firstCollectionItem");
+// console.log(firstCollectionItem.nextElementSibling, "firstCollectionItem");
+
+// Previous sibling elemnt
+
+// console.log(firstCollectionItem.previousSibling, "firstCollectionItem");
+// console.log(firstCollectionItem.previousElementSibling, "firstCollectionItem");
+
+/*
+<li class="collection-item">
+  6-List Item
+  <a href="#" class="delete-item secondary-content">
+    <i class="fa fa-remove"></i>
+  </a>
+</li>;
+
+*/
+
+const listNewElement = document.createElement("li");
+listNewElement.className = "collection-item";
+listNewElement.id = "some-id";
+listNewElement.innerHTML = `
+    6-List Item
+    <a href="#" class="delete-item secondary-content">
+      <i class="fa fa-remove"></i>
+    </a>
+  `;
+
+document.querySelector(".collection").append(listNewElement);
+// console.log(listNewElement, "listNewElement");
+
+const newHeadding = document.createElement("h2");
+newHeadding.id = "task-title";
+newHeadding.appendChild(document.createTextNode("Task List !!!!!!!!!!"));
+
+// console.log(newHeadding);
+
+// Replace Previos Element from New ELement
+
+const oldHeading = document.querySelector("#task-title");
+
+const cardAction = document.querySelector(".card-action");
+
+cardAction.replaceChild(newHeadding, oldHeading);
+
+const link = document.querySelector(".btn-redirect");
+
+link.getAttribute("href");
+link.setAttribute("href", "https://w3school.com");
