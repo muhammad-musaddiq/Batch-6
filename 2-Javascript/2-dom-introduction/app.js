@@ -155,7 +155,7 @@ newHeadding.appendChild(document.createTextNode("Task List !!!!!!!!!!"));
 
 // console.log(newHeadding);
 
-// Replace Previos Element from New ELement
+// Replace Previous Element from New ELement
 
 const oldHeading = document.querySelector("#task-title");
 
@@ -167,3 +167,68 @@ const link = document.querySelector(".btn-redirect");
 
 link.getAttribute("href");
 link.setAttribute("href", "https://w3school.com");
+
+// Event Listener
+
+const clearBtn = document.querySelector(".clear-tasks");
+
+clearBtn.addEventListener("click", function (event) {
+  event.preventDefault();
+  document.querySelector(".collection").innerHTML = " ";
+});
+
+// clearBtn.addEventListener("dblclick", runEventCustomListener);
+// clearBtn.addEventListener("mousedown", runEventCustomListener);
+// clearBtn.addEventListener("mouseup", runEventCustomListener);
+// clearBtn.addEventListener("mouseenter", runEventCustomListener);
+// clearBtn.addEventListener("mouseleave", runEventCustomListener);
+// clearBtn.addEventListener("mousemove", runEventCustomListener);
+
+// function runEventCustomListener(event) {
+//   event.preventDefault();
+//   console.log(`Event Type :${event.type}`);
+// }
+
+// Input field events
+
+const taskInputField = document.querySelector("#task");
+
+// taskInputField.addEventListener("input", runEventTwo);
+// taskInputField.addEventListener("keyup", runEventTwo);
+// taskInputField.addEventListener("keydown", runEventTwo);
+// taskInputField.addEventListener("focus", runEventTwo);
+// taskInputField.addEventListener("blur", runEventTwo);
+
+// function runEventTwo(event) {
+//   event.preventDefault();
+//   console.log(`Event Type :${event.type}`);
+// }
+
+const taskForm = document.querySelector("#task-form");
+
+taskForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const taskInputValue = taskInputField.value;
+
+  if (taskInputValue == "") {
+    alert("Please Fill The Value");
+    // is function se wapas jaoo
+    return;
+  }
+
+  const listNewElement = document.createElement("li");
+  listNewElement.className = "collection-item";
+  listNewElement.innerHTML = `
+    ${taskInputValue}
+    <a href="#" class="delete-item secondary-content">
+      <i class="fa fa-remove"></i>
+    </a>
+  `;
+
+  document.querySelector(".collection").append(listNewElement);
+
+  taskInputField.value = " ";
+
+  console.log(taskInputValue, "taskInputValue");
+});
