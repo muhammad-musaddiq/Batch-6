@@ -177,17 +177,17 @@ clearBtn.addEventListener("click", function (event) {
   document.querySelector(".collection").innerHTML = " ";
 });
 
-// clearBtn.addEventListener("dblclick", runEventCustomListener);
-// clearBtn.addEventListener("mousedown", runEventCustomListener);
-// clearBtn.addEventListener("mouseup", runEventCustomListener);
-// clearBtn.addEventListener("mouseenter", runEventCustomListener);
-// clearBtn.addEventListener("mouseleave", runEventCustomListener);
-// clearBtn.addEventListener("mousemove", runEventCustomListener);
+clearBtn.addEventListener("dblclick", runEventCustomListener);
+clearBtn.addEventListener("mousedown", runEventCustomListener);
+clearBtn.addEventListener("mouseup", runEventCustomListener);
+clearBtn.addEventListener("mouseenter", runEventCustomListener);
+clearBtn.addEventListener("mouseleave", runEventCustomListener);
+clearBtn.addEventListener("mousemove", runEventCustomListener);
 
-// function runEventCustomListener(event) {
-//   event.preventDefault();
-//   console.log(`Event Type :${event.type}`);
-// }
+function runEventCustomListener(event) {
+  event.preventDefault();
+  console.log(`Event Type :${event.type}`);
+}
 
 // Input field events
 
@@ -228,7 +228,5 @@ taskForm.addEventListener("submit", function (event) {
 
   document.querySelector(".collection").append(listNewElement);
 
-  taskInputField.value = " ";
-
-  console.log(taskInputValue, "taskInputValue");
+  taskInputField.value = "";
 });
