@@ -51,8 +51,26 @@ function addtoCardBtnHandler(event) {
           </div>
         </div>`;
 
-  console.log(itemName, "itemName");
-  console.log(itemImage, "itemImage");
-  console.log(itemPrice, "itemPrice");
+  // console.log(itemName, "itemName");
+  // console.log(itemImage, "itemImage");
+  // console.log(itemPrice, "itemPrice");
   //   console.log(mainShopItemDiv, "mainShopItemDiv");
+
+  bindCartItemRemoveButton();
+}
+
+function bindCartItemRemoveButton() {
+  const cartItemRemoveButton = document.querySelectorAll(".btn-remove");
+  cartItemRemoveButton.forEach(function (singleRemoveBtn) {
+    singleRemoveBtn.addEventListener("click", singleCartItemRemoveBtnHandler);
+  });
+}
+
+function singleCartItemRemoveBtnHandler(event) {
+  event.preventDefault();
+  const currentElement = event.target;
+
+  if (confirm("Are you sure ?")) {
+    currentElement.parentElement.parentElement.remove();
+  }
 }
