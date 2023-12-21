@@ -57,6 +57,7 @@ function addtoCardBtnHandler(event) {
   //   console.log(mainShopItemDiv, "mainShopItemDiv");
 
   bindCartItemRemoveButton();
+  updateCartTotal();
 }
 
 function bindCartItemRemoveButton() {
@@ -73,4 +74,24 @@ function singleCartItemRemoveBtnHandler(event) {
   if (confirm("Are you sure ?")) {
     currentElement.parentElement.parentElement.remove();
   }
+}
+
+function updateCartTotal() {
+  const selectAllCartPrices = document.querySelectorAll(
+    ".cart-price-item-item"
+  );
+
+  let cartTotal = 0;
+
+  selectAllCartPrices.forEach(function (singlePrice) {
+    const cartRow = singlePrice.parentElement.parentElement;
+    const cartQuantityField = cartRow.querySelector(".cart-quantity-input");
+
+    cartTotal += parseFloat(singlePrice.innerText) * cartQuantityField.value;
+  });
+
+  const cartTotalElementSelect = document.querySelector(".cart-total-price");
+
+  cartTotalElementSelect.innerText = `$ ${cartTotal.toFixed(2)}`;
+  console.log(cartTotal.toFixed(2), "cartTotal");
 }
