@@ -1,5 +1,6 @@
 const addToCartAllButton = document.querySelectorAll(".shop-item-button");
 const cartItemElement = document.querySelector(".cart-items");
+const purchaseButtons = document.querySelector(".btn-purchase");
 
 addToCartAllButton.forEach(function (singleAddToCartBtn) {
   singleAddToCartBtn.addEventListener("click", addtoCardBtnHandler);
@@ -58,6 +59,7 @@ function addtoCardBtnHandler(event) {
 
   bindCartItemRemoveButton();
   updateCartTotal();
+  bindAllCartQuantityInputField();
 }
 
 function bindCartItemRemoveButton() {
@@ -73,6 +75,7 @@ function singleCartItemRemoveBtnHandler(event) {
 
   if (confirm("Are you sure ?")) {
     currentElement.parentElement.parentElement.remove();
+    updateCartTotal();
   }
 }
 
@@ -93,5 +96,30 @@ function updateCartTotal() {
   const cartTotalElementSelect = document.querySelector(".cart-total-price");
 
   cartTotalElementSelect.innerText = `$ ${cartTotal.toFixed(2)}`;
-  console.log(cartTotal.toFixed(2), "cartTotal");
+}
+
+function bindAllCartQuantityInputField() {
+  const allCartInputField = document.querySelectorAll(".cart-quantity-input");
+
+  allCartInputField.forEach(function (singleInputField) {
+    singleInputField.removeEventListener("change", CartQuantityChangeHandler);
+    singleInputField.addEventListener("change", CartQuantityChangeHandler);
+  });
+}
+
+function CartQuantityChangeHandler(event) {
+  const currentElement = event.target;
+  if (currentElement.value <= 0) {
+    currentElement.value = 1;
+  }
+  updateCartTotal();
+}
+
+purchaseButtons.addEventListener("click", purchaseBtnHandler);
+
+function purchaseBtnHandler(event) {
+  event.preventDefault();
+  cartItemElement.innerHTML = "";
+  updateCartTotal();
+  alert("you have purchased successfully!");
 }
